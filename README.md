@@ -1,10 +1,8 @@
 # A simple starter kit for Eleventy
 
-Hylia is a lightweight [Eleventy](https://11ty.io) starter kit with [Netlify CMS](https://www.netlifycms.org/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend it for yourself.
+Hylia is a lightweight [Eleventy](https://11ty.io) starter kit with [Forestry CMS](https://forestry.io/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend it for yourself.
 
-Get started now by **[deploying Hylia to Netlify.][deploy-to-netlify]**
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)][deploy-to-netlify]
+[![Import to Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=dirtyf/hylia&provider=github&branch=forestry&engine=other&preview=https://hankchizljaw.imgix.net/hylia-github.jpg?auto=format&q=60)
 
 <img src="https://hankchizljaw.imgix.net/hylia-github.jpg?auto=format&q=60" width="550" />
 
@@ -12,16 +10,16 @@ Get started now by **[deploying Hylia to Netlify.][deploy-to-netlify]**
 
 Hylia version 0.7.0 features:
 
-✍️ A pre-configured [Netlify CMS](https://www.netlifycms.org/) setup  
 🎨 Customisable design tokens to make it your own  
 🌍 Customisable global data and navigation  
 📂 Tags and tag archives  
-✅ Progressively enhanced, semantic and accessible  
 🎈 _Super_ lightweight front-end  
+✅ Progressively enhanced, semantic and accessible  
 🚰 Sass powered CSS system with utility class generator  
 ⚙️ Service worker that caches pages so people can read your articles offline  
 🚀 An RSS feed for your posts  
 💌 A basic contact form, ready for [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms)
+✍️ A pre-configured [Forestry CMS](https://forestry.io/) setup
 
 ## Roadmap
 
@@ -38,22 +36,6 @@ Hylia version 0.7.0 features:
 
 ---
 
-## Getting started
-
-### Method one: One-Click Deploy to Netlify
-
-You can [deploy Hylia to Netlify with one click][deploy-to-netlify] and you’ll be up and running in minutes!
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)][deploy-to-netlify]
-
-I recorded a quick start video of me deploying Hylia to Netlify and getting the CMS set up. [Check it out here](https://youtu.be/0hM_0BH-Y_A).
-
-### Method two: Clone / Fork
-
-1. Clone or fork this repo: `git clone https://github.com/hankchizljaw/hylia`
-2. `cd` into the project directory and run `npm install`
-3. Once all the dependencies are installed run `npm start`
-4. Open your browser at `http://localhost:8080` and away you go!
 
 ## Terminal commands
 
@@ -83,18 +65,11 @@ npm run sass:tokens
 
 ## Getting started with the CMS
 
-Before you can use the CMS, you need to do some config in Netlify. Luckily they provide a [very handy guide to get started](https://www.netlify.com/docs/identity/).
+[![Import to Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=dirtyf/hylia&provider=github&branch=forestry&engine=other&preview=https://camo.githubusercontent.com/8bae59778d46d15e98e701d5b6f4d0cb3a2cb880/68747470733a2f2f68616e6b6368697a6c6a61772e696d6769782e6e65742f68796c69612d6769746875622e6a70673f6175746f3d666f726d617426713d3630)
 
-In short, though:
+Once the site is imported in Forestry, go to settings/previews to start the preview server.
 
-- Once you’ve set up the site on Netlify, go to “Settings” > “Identity” and enable Identity
-- Scroll down to the “Git Gateway” area, click “Enable Git Gateway” and follow the steps
-- Click the “Identity” tab at the top
-- Once you’ve enabled identity, click “Invite Users”
-- Check the invite link in your inbox and click the link in the email that’s sent to you
-- Set a password in the popup box
-- Go to `/admin` on your site and login
-- You’re in and ready to edit your content!
+You'll be able to create drafts and preview the final rendering before publishing.
 
 ## Design Tokens and Styleguide
 
@@ -108,7 +83,7 @@ Although Hylia has a pretty simple design, you can configure the core design tok
 
 ---
 
-To change the design tokens in the CMS, find the “Globals” in the sidebar then in the presented options, select “Theme Settings”.
+To change the design tokens in the CMS, click on “theme settings” in the sidebar.
 
 To change the design tokens directly, edit [`_src/data/tokens.json`](https://github.com/hankchizljaw/hylia/blob/master/src/_data/tokens.json).
 
@@ -182,7 +157,7 @@ Pass in the key of one of your breakpoints set in `$stalfos-config['breakpoints'
 
 ## CMS
 
-Hylia has [Netlify CMS](https://www.netlifycms.org/) pre-configured as standard. You can customise the configuration by editing [`src/admin/config.yml`](https://github.com/hankchizljaw/hylia/blob/master/src/admin/config.yml).
+Hylia has [Forestry CMS](https://forestry.io/) pre-configured as standard. You can customise the configuration by editing [`.forestry/settings.yml`](https://github.com/DirtyF/hylia/blob/forestry/.forestry/settings.yml).
 
 ### Content that you can edit
 
@@ -205,4 +180,3 @@ The stuff that I need the most help with is:
 - [Webmentions](https://www.w3.org/TR/webmention/)
 - Performance
 
-[deploy-to-netlify]: https://app.netlify.com/start/deploy?repository=https://github.com/hankchizljaw/hylia&stack=cms
