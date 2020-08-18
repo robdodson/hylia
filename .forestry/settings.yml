@@ -25,10 +25,10 @@ use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_env:
-  - ELEVENTY_ENV=development
+  - ELEVENTY_ENV=staging
   preview_output_directory: src/dist
   install_dependencies_command: npm install
-  preview_docker_image: forestryio/node:12
+  preview_docker_image: node:10
   mount_path: "/srv"
-  working_dir: "/srv"
+  working_dir: "/srv/src"
   instant_preview_command: npm start
